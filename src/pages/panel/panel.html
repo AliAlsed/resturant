@@ -1,0 +1,68 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>لوحة الادارة</ion-title>
+    <ion-buttons>
+      <button ion-button icon-only (click)="logout()" >
+       <ion-icon name="log-out" ></ion-icon>
+ 
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card (click)="requests()" >
+      <div class="overlayone"></div>
+        <div class="mcontainer">
+            <div class="card-title">
+                <ion-icon name="cart"></ion-icon>
+            </div>
+            <div class="card-subtitle">اضافه اطباق رئيسية</div>
+        </div>
+      </ion-card>
+
+
+      <ion-card (click)="addfod()">
+          <div class="overlaythree"></div>
+            <div class="mcontainer">
+                <div class="card-title">
+                    <ion-icon name="pizza"></ion-icon>
+           </div>
+                <div class="card-subtitle">اضافة وجبات سريعه</div>
+            </div>
+          </ion-card>
+
+          <ion-card (click)="fodmenu()">
+                <div class="overlaytwo"></div>
+                  <div class="mcontainer">
+                      <div class="card-title">
+                        <ion-icon name="pint"></ion-icon>
+                      </div>
+                      <div class="card-subtitle">اضافة عصائر</div>
+                  </div>
+          </ion-card>
+          <ion-card (click)="adddesert()">
+            <div class="overlayfor"></div>
+              <div class="mcontainer">
+                  <div class="card-title">
+                    <ion-icon name="ice-cream"></ion-icon>
+                  </div>
+                  <div class="card-subtitle">اضافة حلويات</div>
+              </div>
+      </ion-card>
+          <ion-card (click)="addnutrition()">
+            <div class="overlayfive"></div>
+              <div class="mcontainer">
+                  <div class="card-title">
+                    <ion-icon name="nutrition"></ion-icon>
+              </div>
+                  <div class="card-subtitle">اضافة مقبلات</div>
+              </div>
+      </ion-card>
+
+</ion-content>
